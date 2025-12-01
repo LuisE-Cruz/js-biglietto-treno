@@ -6,22 +6,20 @@
 
 const passengerAge = parseInt(prompt("Quanti anni hai?"));
 const km = parseInt(prompt("Quanti km devi percorrere?"));
-const ticketPrice = (0.21 * km);
-
-
-console.log(ticketPrice);
+let ticketPrice = 0.21 * km;
 
 if (passengerAge <= 18) {
-
-    console.log("L'utente è minorenne");
+    ticketPrice = ticketPrice - (ticketPrice * 20) / 100;
+    console.log(ticketPrice);
 }
 
 else if (passengerAge >= 65) {
-    console.log("L'utente è un Senior");
+    ticketPrice = ticketPrice - (ticketPrice * 40) / 100;
+    console.log(ticketPrice);
 }
 
-else {
-    console.log("L'utente è un adulto");
-}
+// else {
+//     console.log("L'utente è un adulto");
+// }
 
 
