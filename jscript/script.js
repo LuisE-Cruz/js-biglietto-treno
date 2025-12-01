@@ -7,29 +7,22 @@
 const passengerAge = parseInt(prompt("Quanti anni hai?"));
 const km = parseInt(prompt("Quanti km devi percorrere?"));
 let ticketPrice = 0.21 * km;
-// const message = "il tuo prezzo è " + ticketPrice.toFixed(2) + "€";
+let message = "il tuo prezzo è di " + ticketPrice.toFixed(2) + "€";
 
 if (passengerAge <= 18) {
     ticketPrice = ticketPrice - (ticketPrice * 20) / 100;
-    // message = "Il tuo prezzo è " ticketPrice.toFixed(2) + "€";
+    message = "Il tuo prezzo scontato da giovane è di " + ticketPrice.toFixed(2) + "€";
 }
 
 else if (passengerAge >= 65) {
     ticketPrice = ticketPrice - (ticketPrice * 40) / 100;
-    // message = "Il tuo prezzo è " ticketPrice.toFixed2 + "€";
+    message = "Il tuo prezzo scontato da senior è di " + ticketPrice.toFixed(2) + "€";
+
     // console.log(ticketPrice);
 }
 
-const message = "il prezzo del tuo biglietto è " +  ticketPrice.toFixed(2) + "€";
+// const message = "il prezzo del tuo biglietto è " +  ticketPrice.toFixed(2) + "€";
 console.log(message);
-
-
-
-
-
-
-
-
 
 
 // else {
