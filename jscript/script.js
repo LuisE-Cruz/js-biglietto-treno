@@ -5,6 +5,26 @@
 
 //setup
 
+const passengerAge = 10;
+const km = 100;
+const ticketPrice = (0.21 * km) ;
+
+
+console.log(ticketPrice);
+
+if (passengerAge <= 18) {
+    
+    console.log("L'utente è minorenne");
+}
+
+else if (passengerAge >= 65) {
+    console.log("L'utente è un Senior");
+}
+
+else {
+    console.log("L'utente è un adulto");
+}
+
 
 
 
